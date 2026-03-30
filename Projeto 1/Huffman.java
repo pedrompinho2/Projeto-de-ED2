@@ -24,10 +24,7 @@ public class Huffman {
             }
         }
     }
-    }
-    /**
-     * ETAPA 2 e 3: Alimenta o Min-Heap e constrói a Árvore de Huffman[cite: 3363, 3388].
-     */
+    //ETAPA 2 e 3: Alimenta o Min-Heap e constrói a Árvore de Huffman
     public void montarArvore() {
 
         MinHeap heap = new MinHeap();
@@ -41,10 +38,9 @@ public class Huffman {
 
         System.out.println("\nETAPA 2: Min-Heap Inicial");
 
-        // --- PASSO 3: CONSTRUIR A ÁRVORE ---
-        // O laço roda enquanto o Heap tiver mais de 1 nó.
-        while (heap.tamanho() > 1) {
-            // 1. Remove os dois nós mais "leves" (menores frequências)
+        //constropi a arvore com um laço que roda enquanto o heap tiver mais de 1 nó
+        while (heap.tamanho() > 1) { //Remove os dois nós com menor frequencia
+            
             No esquerdo = heap.remover();
             No direito = heap.remover();
 
